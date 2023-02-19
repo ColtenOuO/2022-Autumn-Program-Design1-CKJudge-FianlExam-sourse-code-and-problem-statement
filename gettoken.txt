@@ -1,0 +1,17 @@
+Please write a gettoken function which can isolate sequential tokens in a null-terminated string. The first argument str is a pointer to char which will point to the string that we want to get tokens from. The second argument sep is a string of separator. The first time that gettoken is called, str should be specified; subsequent calls, wishing to obtain further tokens from the same string, should pass a NULL pointer instead.
+
+strtok, strtok_r, strsep is banned in this problem
+
+請寫一個 gettoken 函式將一個 null-terminated 字串分割為 token。第一個參數 str 為一個指標，指向我們想要得到 token 的字串。第二個參數 sep 是一個字串，其中的字元為分割字元。gettoken 第一次被呼叫時需給定 str，其後的呼叫如果要繼續在同一個字串分割 token 需傳入 NULL。
+
+本題禁用 strtok, strtok_r, strsep
+
+Input
+The first line contains an integer N that indicates the number of lines, followed by N lines of text, each line will be less than 4000 character
+
+第一行為一數字 N 代表總共有幾行文字，接下來有 N 行文字，每行文字會小於 4000 個字元
+
+Output
+Multiple tokens, each separated by a newline
+
+多個 token，token 之間用換行分開
